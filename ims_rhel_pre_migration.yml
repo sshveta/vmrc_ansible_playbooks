@@ -1,0 +1,12 @@
+---
+- hosts: to_be_migrated
+  vars:
+    rhsm_config:
+      server_hostname: "subscription.rhn.redhat.com"
+      server_username: "qa@redhat.com"
+      server_password: "MTQj5t3n5K86p3gH"
+      org_id: "redhat"
+    rhsm_repositories:
+      - "rhel-7-server-rpms"
+  roles:
+- role: ims.rhel_pre_migration
